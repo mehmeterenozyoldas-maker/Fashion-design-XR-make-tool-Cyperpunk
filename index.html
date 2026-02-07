@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NeuroMask Architect // 2040</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500&family=JetBrains+Mono:wght@300;400&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['Inter', 'sans-serif'],
+              mono: ['JetBrains Mono', 'monospace'],
+            },
+            colors: {
+              void: '#030303',
+              glass: 'rgba(255, 255, 255, 0.03)',
+              glassBorder: 'rgba(255, 255, 255, 0.08)',
+              holo: '#ffffff',
+              accent: '#3b82f6', // Electric Blue
+              textMain: '#e5e5e5',
+              textDim: '#525252',
+            },
+            backdropBlur: {
+              'xs': '2px',
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      body { background-color: #030303; color: #e5e5e5; overflow: hidden; }
+      
+      /* 2040 Scrollbar */
+      ::-webkit-scrollbar { width: 2px; }
+      ::-webkit-scrollbar-track { background: transparent; }
+      ::-webkit-scrollbar-thumb { background: #333; }
+      
+      .scan-overlay {
+        background: radial-gradient(circle at center, transparent 40%, rgba(0,0,0, 0.9) 100%);
+      }
+
+      /* Glass Panel Utility */
+      .glass-panel {
+        background: rgba(20, 20, 20, 0.4);
+        backdrop-filter: blur(20px);
+        -webkit-backdrop-filter: blur(20px);
+        border: 1px solid rgba(255, 255, 255, 0.05);
+        box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react": "https://esm.sh/react@18.2.0",
+    "react/": "https://esm.sh/react@18.2.0/",
+    "react-dom": "https://esm.sh/react-dom@18.2.0",
+    "react-dom/": "https://esm.sh/react-dom@18.2.0/",
+    "lucide-react": "https://esm.sh/lucide-react@0.263.1?deps=react@18.2.0",
+    "three": "https://esm.sh/three@0.160.0",
+    "three/": "https://esm.sh/three@0.160.0/",
+    "@react-three/fiber": "https://esm.sh/@react-three/fiber@8.15.12?deps=three@0.160.0,react@18.2.0,react-dom@18.2.0",
+    "@react-three/drei": "https://esm.sh/@react-three/drei@9.96.1?deps=three@0.160.0,react@18.2.0,react-dom@18.2.0,@react-three/fiber@8.15.12",
+    "@react-three/xr": "https://esm.sh/@react-three/xr@5.7.1?deps=three@0.160.0,react@18.2.0,react-dom@18.2.0,@react-three/fiber@8.15.12",
+    "@react-three/postprocessing": "https://esm.sh/@react-three/postprocessing@2.16.0?deps=three@0.160.0,react@18.2.0,react-dom@18.2.0,@react-three/fiber@8.15.12,postprocessing@6.34.1",
+    "postprocessing": "https://esm.sh/postprocessing@6.34.1?deps=three@0.160.0",
+    "three/examples/jsm/utils/BufferGeometryUtils.js": "https://esm.sh/three@0.160.0/examples/jsm/utils/BufferGeometryUtils.js?deps=three@0.160.0",
+    "@mediapipe/tasks-vision": "https://esm.sh/@mediapipe/tasks-vision@0.10.3"
+  }
+}
+</script>
+</head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>

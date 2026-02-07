@@ -1,0 +1,7 @@
+{
+  "name": "NeuroMask: Computational Face Wearables",
+  "description": "A high-performance 3D computational design tool for creating procedural face masks and jewelry. Features parametric generation, OBJ import support for custom scans, and direct export for 3D printing workflows.",
+  "requestFramePermissions": [
+    "camera"
+  ]
+}
